@@ -7,7 +7,7 @@ Compatible with LimeSurvey versions 6.x.
 
 **Implementation:**
 
-1) - **Extract the download, compress (zip) the *Multiple-Choice-Dropdown* folder and import via the theme manager.
+1) Extract the download, compress (zip) the *Multiple-Choice-Dropdown* folder and import via the theme manager.
 
 2) Create a Multiple-Choice-Dropdown question, click Save.
 
