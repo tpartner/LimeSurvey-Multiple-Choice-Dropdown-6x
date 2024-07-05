@@ -1,0 +1,39 @@
+{#
+
+/**
+ * Multiple Choice Html : item row
+ *
+ * @var hiddenfield
+ * @var name
+ * @var title
+ * @var question
+ * @var checkedState
+ * @var sCheckconditionFunction
+ * @var myfname
+ * @var sValue
+ */
+#}
+
+
+<!-- answer_row -->
+<li id='javatbd{{ myfname }}' class='question-item answer-item checkbox-item mb-1 {{ relevanceClass }}'>
+    <div class="row">
+        <div class="col-auto">
+            <input
+                type="checkbox"
+                name="{{ myfname }}"
+                id="answer{{ myfname }}"
+                {{ checkedState }}
+                value="Y"
+            />
+            <label for="answer{{ myfname }}" class="checkbox-label control-label">{{ processString(question) }}</label>
+            <input
+                type="hidden"
+                name="java{{ myfname }}"
+                id="java{{ myfname }}"
+                value="{{ C.Html.encode( sValue ) }}"
+            />
+        </div>
+    </div>
+</li>
+<!-- end of answer_row -->
